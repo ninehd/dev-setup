@@ -16,12 +16,19 @@ What's in this setup?
 - Host: 
   - Mac
 - Terminal: Iterm2
-- zsh
-- git
-- Node.js
-    - node
-    - npm
-    - yarn
+- Shell: zsh
+- Dependencies:
+  - homebrew
+  - git
+  - goto
+  - powerlevel10k
+  - oh-my-zsh
+  - zsh-syntax-highlightninh
+  - fzf-zsh-plugin
+  - thefuck
+  - Node.js
+      - node
+      - npm
 
 Install Oh My Zsh
 ---------------------------
@@ -42,7 +49,7 @@ Install common dependencies
 ---------------------------
 
 ```shell script
-brew install git gnupg thefuck goto
+brew install git gnupg thefuck goto node
 ```
 
 
