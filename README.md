@@ -38,11 +38,11 @@ chmod +x install_homebrew.sh
 source ./install_homebrew.sh
 ```
 
-Install Git & GPG
+Install common dependencies
 ---------------------------
 
 ```shell script
-brew install git gnupg
+brew install git gnupg thefuck goto
 ```
 
 

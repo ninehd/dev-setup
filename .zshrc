@@ -19,10 +19,6 @@ export PATH=/opt/homebrew/bin:$PATH
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -86,6 +82,10 @@ plugins=(
   thefuck
   fzf-zsh-plugin
 )
+
+# Path to your oh-my-zsh installation. (To place after plugins declaration°
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -156,6 +156,5 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export FZF_DEFAULT_COMMAND="find ."
 
 # Source goto
-[[ -s "/usr/local/share/goto.sh" ]] && source /usr/local/share/goto.sh
-source ~/goto.sh
+source "$(brew --prefix)/etc/bash_completion.d/goto.sh"
 
