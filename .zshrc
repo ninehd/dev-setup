@@ -158,3 +158,5 @@ export FZF_DEFAULT_COMMAND="find ."
 # Source goto
 source "$(brew --prefix)/etc/bash_completion.d/goto.sh"
 
+# To customize prompt, run `p10k configure` or edit ~/dev/github/dotfiles/.p10k.zsh.
+[[ ! -f ~/dev/github/dotfiles/.p10k.zsh ]] || source ~/dev/github/dotfiles/.p10k.zsh
