@@ -284,11 +284,11 @@
   # Custom prefix.
   typeset -g POWERLEVEL9K_DIR_PREFIX='%fin '
 
-    typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=33
-    typeset -g POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=214
-    typeset -g POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=33
-    typeset -g POWERLEVEL9K_VCS_CONFLICTED_FOREGROUND=99
-    typeset -g POWERLEVEL9K_VCS_LOADING_FOREGROUND=99
+    typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=141
+    typeset -g POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=38
+    typeset -g POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=141
+    typeset -g POWERLEVEL9K_VCS_CONFLICTED_FOREGROUND=161
+    typeset -g POWERLEVEL9K_VCS_LOADING_FOREGROUND=141
 
   #####################################[ vcs: git status ]######################################
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
