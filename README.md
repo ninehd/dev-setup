@@ -120,8 +120,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-zsh-plugin
   
 # Clone the dotfiles repository
-mkdir -p ~/dev/github/dotfiles
-git clone git@github.com:ninehd/dotfiles.git
+mkdir -p ~/dev/github/dotfiles && git clone git@github.com:ninehd/dotfiles.git ~/dev/github/dotfiles
 
 # Link custom dotfiles
 ln -sf ~/dev/github/dotfiles/.zsh_aliases ~/.zsh_aliases

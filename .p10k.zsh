@@ -155,8 +155,8 @@
   typeset -g POWERLEVEL9K_PROMPT_CHAR_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL=
 
   ##################################[ dir: current directory ]##################################
-  # Default current directory color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND=106
+  # Default current directory color
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND=148
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=original
@@ -284,11 +284,11 @@
   # Custom prefix.
   typeset -g POWERLEVEL9K_DIR_PREFIX='%fin '
 
-    typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=141
-    typeset -g POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=38
-    typeset -g POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=141
+    typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=177
+    typeset -g POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=214
+    typeset -g POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=177
     typeset -g POWERLEVEL9K_VCS_CONFLICTED_FOREGROUND=161
-    typeset -g POWERLEVEL9K_VCS_LOADING_FOREGROUND=141
+    typeset -g POWERLEVEL9K_VCS_LOADING_FOREGROUND=177
 
   #####################################[ vcs: git status ]######################################
   # Branch icon. Set this parameter to '\UE0A0 ' for the popular Powerline branch icon.
@@ -815,7 +815,7 @@
   # Context color in SSH without privileges.
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=180
   # Default context color (no privileges, no SSH).
-  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=208
+  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=75
 
   # Context format when running with privileges: bold user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%B%n@%m'
