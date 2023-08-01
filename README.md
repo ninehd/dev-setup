@@ -29,7 +29,10 @@ What's in this setup?
   - Node.js
       - node
       - npm
-
+- Themes:
+  - Some powerlevel10k themes for prompt
+  - A script to change easily prompt theme
+    
 Install Oh My Zsh
 ---------------------------
 
@@ -122,9 +125,23 @@ git clone --depth 1 https://github.com/unixorn/fzf-zsh-plugin.git ${ZSH_CUSTOM:-
 # Clone the dotfiles repository
 mkdir -p ~/dev/github/dotfiles && git clone git@github.com:ninehd/dotfiles.git ~/dev/github/dotfiles
 
-# Link custom dotfiles
+# Create bin directory in home
+mkdir ~/bin
+
+# Create link for theme script
+chmod +x ~/dev/github/dotfiles/themes/theme.sh
+ln -s ~/dev/github/dotfiles/themes/theme.sh ~/bin/ztheme
+
+# Link custom dotfiles 
 ln -sf ~/dev/github/dotfiles/.zsh_aliases ~/.zsh_aliases
 ln -sf ~/dev/github/dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -sf ~/dev/github/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dev/github/dotfiles/.gitignore ~/.gitignore
+```
+
+Change prompt p10k customization
+---------
+Use any number present in map defined in file theme.sh
+```shell script
+ztheme 1
 ```
