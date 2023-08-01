@@ -34,7 +34,7 @@ if [ ! -f "$themes_directory/$theme_file" ]; then
 fi
 
 # Confirm the action with the user
-read -p "This will replace your current .p10k.zsh file with '$theme_file'. Are you sure you want to proceed? (y/n) " choice
+read -p "This will replace your current .p10k.zsh file with '$theme_file'. (y/n) " choice
 case "$choice" in
   y|Y )
     # Copy the selected theme file to the home directory as .p10k.zsh
